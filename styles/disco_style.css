@@ -1,0 +1,45 @@
+.main__disco{
+    padding: 3.8% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+}
+
+.section__disco{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 26px;
+
+}
+
+.img__disco{
+    border-style: solid;
+    border-width: 5px;
+    border-color: var(--azulclaro);
+    border-radius: 30px;
+}
+
+.img__disco:hover{
+    border-style: solid;
+    border-width: 5px;
+    border-color: var(--laranja);
+    border-radius: 30px;
+}
+
+h1{
+    font-size: 20px;
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media (max-width: 1000px) {
+    .section__disco{
+        flex-direction: column-reverse;
+    }
+    .main__disco{
+        gap: 26px;
+    }
+}

@@ -1,0 +1,35 @@
+.main__about{
+    padding: 4% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+.section__about{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.section__about__foto{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    font-size: 1.25rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media (max-width: 1000px) {
+    .main__about{
+        flex-direction: column-reverse;
+    }
+    .section__about{
+        width: auto;
+        gap: 16px;
+    }
+}

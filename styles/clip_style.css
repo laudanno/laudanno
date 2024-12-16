@@ -1,0 +1,31 @@
+.main__clip{
+margin: 12% 2%;
+}
+
+.section__clip{
+    display: flex;
+    justify-content: center;
+    gap: 6%;
+}
+iframe{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #03eeff;
+    border-radius: 40px;
+}
+
+@media (max-width: 1000px){
+    .section__clip{
+        flex-direction: column;
+    }
+    .main__clip{
+        margin: 2% 0%;
+        display: flex;
+        justify-content: center;
+    }
+    iframe{
+        height: 220px;
+        width: 343px;
+        margin-bottom: 5%;
+    }
+}
