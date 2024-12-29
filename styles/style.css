@@ -145,6 +145,21 @@ body{
     font-weight: 400;
 }
 
+#launch{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+#launch__titulo{
+    font-size: 1.7rem;
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 30px;
+    color: var(--azulclaro);
+}
+
 @media (max-width: 1000px) {
     .nav{
         gap: 4%;
@@ -152,7 +167,7 @@ body{
         text-align: center;
     }
     .nav__menu{
-        font-size: 0.5rem;
+        font-size: 0.45rem;
         padding: 12px 5px;
     }
     .nav__menu:hover{
@@ -177,5 +192,10 @@ body{
     }
     .foto{
         width: 50%;
+    }
+
+    #launch__titulo{
+        font-size: 0.9rem;
+        padding-bottom: 8px;
     }
 }
