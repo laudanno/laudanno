@@ -191,11 +191,12 @@ body{
         font-size: 1.3rem;
     }
     .foto{
-        width: 50%;
+        width: 64%;
+        padding-bottom: 20px;
     }
 
     #launch__titulo{
         font-size: 0.9rem;
-        padding-bottom: 8px;
+        padding-bottom: 16px;
     }
 }
