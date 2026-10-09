@@ -1,22 +1,31 @@
-.main__about{
+/* O flex: 1 faz o main expandir e empurrar o rodapé para o final da página */
+.main__about {
+    flex: 1; 
     padding: 4% 5%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5%;
 }
-.section__about{
+
+.section__about {
     width: 615px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-.section__about__foto{
+
+.section__about__foto {
     display: flex;
     justify-content: center;
 }
 
-p{
+.foto {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
     font-size: 1.25rem;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -24,11 +33,13 @@ p{
     font-style: normal;
 }
 
+/* Responsivo para mobile */
 @media (max-width: 1000px) {
-    .main__about{
+    .main__about {
         flex-direction: column-reverse;
     }
-    .section__about{
+    
+    .section__about {
         width: auto;
         gap: 16px;
     }
