@@ -1,45 +1,60 @@
-.main__disco{
+.main__disco {
     padding: 3.8% 0%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 90px;
+    gap: 40px; /* Reduzido levemente o gap geral para acomodar a quebra automática de linhas */
 }
 
-.section__disco{
+.section__disco {
     display: flex;
+    flex-wrap: wrap; /* Permite que os álbuns quebrem para a próxima linha automaticamente */
+    justify-content: center; /* Centraliza as capas na linha */
     align-items: center;
-    justify-content: space-between;
-    gap: 26px;
-
+    gap: 26px; /* Mantém o espaçamento exato que você já utilizava */
+    max-width: 1200px; /* Define um limite para o número de álbuns por prateleira no PC */
+    padding: 0 20px;
 }
 
-.img__disco{
+.img__disco {
+    width: 180px; /* Tamanho fixo e uniforme para as capas */
+    height: 180px;
+    object-fit: cover;
     border-style: solid;
     border-width: 5px;
     border-color: var(--azulclaro);
     border-radius: 30px;
+    transition: border-color 0.3s ease; /* Transição suave na troca de cor ao passar o mouse */
 }
 
-.img__disco:hover{
+.img__disco:hover {
     border-style: solid;
     border-width: 5px;
     border-color: var(--laranja);
     border-radius: 30px;
 }
 
-h1{
+h1 {
     font-size: 20px;
     font-family: "Krona One", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
+/* Ajustes para Telas Menores / Mobile */
 @media (max-width: 1000px) {
-    .section__disco{
-        flex-direction: column-reverse;
+    .section__disco {
+        flex-direction: row; /* Mantém a ordem direta do topo para a base */
+        justify-content: center;
+        gap: 20px;
     }
-    .main__disco{
+    
+    .main__disco {
         gap: 26px;
+    }
+
+    .img__disco {
+        width: 140px; /* Reduz sutilmente no celular para caberem 2 capas lado a lado se desejar */
+        height: 140px;
     }
 }
