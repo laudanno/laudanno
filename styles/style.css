@@ -9,28 +9,42 @@
     --marrom: #dd6136;
     --navmenu: #182831;
     --navmenu-carac: #fc9134;
-    --navmenu-color-hover: #41250e;}
+    --navmenu-color-hover: #41250e;
+}
 
+/* Reset universal de margens */
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
-}
-body{
-    /* height: 100vh; */
     box-sizing: border-box;
+}
+
+/* Configuração do layout flexível na altura total da tela */
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ocupa no mínimo 100% da altura da janela */
     background-color: var(--pri-bg);
     color: var(--marrom);
 }
 
-/*                                                  CABEÇALHO */
+/* Faz com que a seção principal de qualquer página expanda para empurrar o rodapé */
+main, .apresentacao, .main__about, .main__disco {
+    flex: 1;
+}
+
+/*                                                 CABEÇALHO */
 .header{
     background-color: var(--sec-bg);
     font-size: 0.63rem;
     font-family: "Krona One", sans-serif;
     font-weight: 400;
     font-style: normal;
-
 }
 
 .nav{
@@ -53,7 +67,7 @@ body{
     padding: 0.5% 2.5%;
     border-radius: 20px;
 }
-/*                                                       FIM DO CABEÇALHO */
+/*                                                     FIM DO CABEÇALHO */
 
 .titulo-destaque {
     color: var(--azulclaro);
@@ -79,7 +93,6 @@ body{
     font-family: "Krona One", sans-serif;
     font-weight: 400;
     font-style: normal;
-   
 }
 
 .apresentacao__conteudo__paragrafo {
@@ -118,14 +131,17 @@ body{
     background-color: #233B48;
     color: #FF9100;
 }
+
 .section__foto{
     display: flex;
     justify-content: center;
 }
+
 .foto{
     width: 100%;
     border-radius: 30px;
 }
+
 .fonte__subtitulo{
     font-size: 1.25rem;
     font-family: "Krona One", sans-serif;
@@ -175,12 +191,10 @@ body{
         padding: 12px 5px;
     }
 
-    
     .apresentacao {
         flex-direction: column-reverse;
     }
     .apresentacao__conteudo{
-        /* width: 340px; */
         width: auto;
         gap: 14px;
     }
