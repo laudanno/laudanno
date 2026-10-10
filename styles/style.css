@@ -176,41 +176,60 @@ main, .apresentacao, .main__about, .main__disco {
     color: var(--azulclaro);
 }
 
+/* Ajustes para Telas Médias / Tablets (até 1000px) */
 @media (max-width: 1000px) {
-    .nav{
+    .nav {
         gap: 4%;
         padding: 3.5%;
         text-align: center;
     }
-    .nav__menu{
+    .nav__menu {
         font-size: 0.45rem;
         padding: 12px 5px;
     }
-    .nav__menu:hover{
+    .nav__menu:hover {
         font-size: 0.5rem;
         padding: 12px 5px;
     }
 
     .apresentacao {
         flex-direction: column-reverse;
+        padding: 6% 4%; /* Ajusta o espaçamento interno */
     }
-    .apresentacao__conteudo{
+    .apresentacao__conteudo {
         width: auto;
         gap: 14px;
     }
     .apresentacao__conteudo__titulo {
-        font-size: 1.6rem;
+        font-size: 1.5rem; /* Ajustado levemente */
     }
     .apresentacao__conteudo__paragrafo {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
-    .foto{
-        width: 64%;
+    .foto {
+        width: 80%;
         padding-bottom: 20px;
     }
 
-    #launch__titulo{
+    #launch__titulo {
         font-size: 0.9rem;
         padding-bottom: 16px;
+    }
+}
+
+/* Ajustes Específicos para Celulares (até 600px) */
+@media (max-width: 600px) {
+    .apresentacao__conteudo__titulo {
+        font-size: 1.15rem; /* Reduz a fonte para caber palavras longas sem vazar */
+        line-height: 1.4;    /* Melhora o espaçamento vertical entre as linhas */
+        word-break: break-word; /* Previne que qualquer palavra grande estoure a tela */
+    }
+
+    .apresentacao__conteudo__paragrafo {
+        font-size: 1rem;
+    }
+
+    .foto {
+        width: 100%; /* Aproveita melhor a largura em telas pequenas */
     }
 }
