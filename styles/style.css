@@ -12,7 +12,7 @@
     --navmenu-color-hover: #41250e;
 }
 
-/* Reset universal de margens */
+/* Reset universal de margens corrigido de '-' para '*' */
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +28,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ocupa no mínimo 100% da altura da janela */
+    min-height: 100vh;
     background-color: var(--pri-bg);
     color: var(--marrom);
 }
